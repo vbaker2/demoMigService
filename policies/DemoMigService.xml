@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+    <wsp:All wsp:Usage="Required">
+        <L7p:CustomizeErrorResponse>
+            <L7p:Content stringValueReference="inline"><![CDATA[{
+   "error":"Authentication Error"
+}]]></L7p:Content>
+            <L7p:ContentType stringValue="application/json; charset=UTF-8"/>
+            <L7p:ExtraHeaders nameValuePairArray="included"/>
+            <L7p:HttpStatus stringValue="401"/>
+        </L7p:CustomizeErrorResponse>
+        <L7p:ApiPortalIntegration>
+            <L7p:ApiGroup stringValue=""/>
+            <L7p:ApiId stringValue="952e4932-f184-41de-947b-97017396e490"/>
+            <L7p:PortalManagedApiFlag stringValue="L7p:ApiPortalManagedServiceAssertion"/>
+        </L7p:ApiPortalIntegration>
+        <wsp:OneOrMore wsp:Usage="Required">
+            <wsp:All wsp:Usage="Required">
+                <L7p:Encapsulated>
+                    <L7p:EncapsulatedAssertionConfigGuid stringValue="393bcb93-82ad-4b55-8333-1119f607a560"/>
+                    <L7p:EncapsulatedAssertionConfigName stringValue="OTK Require OAuth 2.0 Token"/>
+                    <L7p:Parameters mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="any_resource_required"/>
+                            <L7p:value stringValue="false"/>
+                        </L7p:entry>
+                        <L7p:entry>
+                            <L7p:key stringValue="cache_lifetime"/>
+                            <L7p:value stringValue="11234"/>
+                        </L7p:entry>
+                        <L7p:entry>
+                            <L7p:key stringValue="custom"/>
+                            <L7p:value stringValue="2134"/>
+                        </L7p:entry>
+                        <L7p:entry>
+                            <L7p:key stringValue="disable_audience_check"/>
+                            <L7p:value stringValue="false"/>
+                        </L7p:entry>
+                        <L7p:entry>
+                            <L7p:key stringValue="given_access_token"/>
+                            <L7p:value stringValue="1234"/>
+                        </L7p:entry>
+                        <L7p:entry>
+                            <L7p:key stringValue="onetime"/>
+                            <L7p:value stringValue="false"/>
+                        </L7p:entry>
+                        <L7p:entry>
+                            <L7p:key stringValue="resource_required"/>
+                            <L7p:value stringValue="1234"/>
+                        </L7p:entry>
+                        <L7p:entry>
+                            <L7p:key stringValue="scope_fail"/>
+                            <L7p:value stringValue="false"/>
+                        </L7p:entry>
+                        <L7p:entry>
+                            <L7p:key stringValue="scope_required"/>
+                            <L7p:value stringValue="4324555"/>
+                        </L7p:entry>
+                    </L7p:Parameters>
+                </L7p:Encapsulated>
+            </wsp:All>
+            <L7p:Include>
+                <L7p:PolicyGuid stringValue="0c8321c3-d484-4675-b1be-eddf6e780b8a"/>
+                <L7p:PolicyName stringValue="DemoAuthFragment"/>
+            </L7p:Include>
+            <L7p:assertionComment>
+                <L7p:Properties mapValue="included">
+                    <L7p:entry>
+                        <L7p:key stringValue="RIGHT.COMMENT"/>
+                        <L7p:value stringValue="Authentication"/>
+                    </L7p:entry>
+                </L7p:Properties>
+            </L7p:assertionComment>
+        </wsp:OneOrMore>
+        <wsp:OneOrMore wsp:Usage="Required">
+            <L7p:Include>
+                <L7p:PolicyGuid stringValue="819980fa-58cd-4134-a8c3-80290bcf340f"/>
+                <L7p:PolicyName stringValue="demoChangeFragment_loadConfig"/>
+            </L7p:Include>
+            <wsp:All wsp:Usage="Required">
+                <L7p:SetVariable>
+                    <L7p:Base64Expression stringValue="bDdndzo4NDQzL2RlbW8vbWlncmF0aW9uL2pzb250cmFuc2Zvcm0="/>
+                    <L7p:VariableToSet stringValue="route"/>
+                </L7p:SetVariable>
+                <L7p:SetVariable>
+                    <L7p:Base64Expression stringValue="YXVkaXQ="/>
+                    <L7p:VariableToSet stringValue="logMode"/>
+                </L7p:SetVariable>
+                <L7p:SetVariable>
+                    <L7p:Base64Expression stringValue="YWRtaW4="/>
+                    <L7p:VariableToSet stringValue="loginuser"/>
+                </L7p:SetVariable>
+                <L7p:SetVariable>
+                    <L7p:Base64Expression stringValue="ZGVtbw=="/>
+                    <L7p:VariableToSet stringValue="demoSetting"/>
+                </L7p:SetVariable>
+                <L7p:assertionComment>
+                    <L7p:Properties mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="RIGHT.COMMENT"/>
+                            <L7p:value stringValue="Default Config if Config is not available"/>
+                        </L7p:entry>
+                    </L7p:Properties>
+                </L7p:assertionComment>
+            </wsp:All>
+            <L7p:assertionComment>
+                <L7p:Properties mapValue="included">
+                    <L7p:entry>
+                        <L7p:key stringValue="RIGHT.COMMENT"/>
+                        <L7p:value stringValue="LoadConfig"/>
+                    </L7p:entry>
+                </L7p:Properties>
+            </L7p:assertionComment>
+        </wsp:OneOrMore>
+        <L7p:Include>
+            <L7p:PolicyGuid stringValue="ccfd7877-676f-4a0b-813d-486cc003e98c"/>
+            <L7p:PolicyName stringValue="Logging Request"/>
+        </L7p:Include>
+        <L7p:CustomizeErrorResponse>
+            <L7p:Content stringValueReference="inline"><![CDATA[{
+   "error":"Back-End Error"
+}]]></L7p:Content>
+            <L7p:ContentType stringValue="application/json; charset=UTF-8"/>
+            <L7p:ExtraHeaders nameValuePairArray="included"/>
+        </L7p:CustomizeErrorResponse>
+        <L7p:Encapsulated>
+            <L7p:EncapsulatedAssertionConfigGuid stringValue="14bb7541-8b93-4a6a-b294-bc8981f25cdd"/>
+            <L7p:EncapsulatedAssertionConfigName stringValue="demo_returnRequestParameterAsJSON"/>
+        </L7p:Encapsulated>
+        <L7p:Include>
+            <L7p:PolicyGuid stringValue="af91fb7a-1b64-41a9-82bc-29c28a8b6718"/>
+            <L7p:PolicyName stringValue="Logging Pre-Route"/>
+        </L7p:Include>
+        <L7p:HttpRoutingAssertion>
+            <L7p:KeyAlias stringValue="ssl"/>
+            <L7p:Login stringValue="${loginuser}"/>
+            <L7p:NonDefaultKeystoreId goidValue="00000000000000000000000000000002"/>
+            <L7p:Password stringValue="${secpass.adminpassword.plaintext}"/>
+            <L7p:ProtectedServiceUrl stringValue="https://${route}"/>
+            <L7p:ProxyPassword stringValueNull="null"/>
+            <L7p:ProxyUsername stringValueNull="null"/>
+            <L7p:RequestHeaderRules httpPassthroughRuleSet="included">
+                <L7p:ForwardAll booleanValue="true"/>
+                <L7p:Rules httpPassthroughRules="included">
+                    <L7p:item httpPassthroughRule="included">
+                        <L7p:Name stringValue="Cookie"/>
+                    </L7p:item>
+                    <L7p:item httpPassthroughRule="included">
+                        <L7p:Name stringValue="SOAPAction"/>
+                    </L7p:item>
+                </L7p:Rules>
+            </L7p:RequestHeaderRules>
+            <L7p:RequestParamRules httpPassthroughRuleSet="included">
+                <L7p:ForwardAll booleanValue="true"/>
+                <L7p:Rules httpPassthroughRules="included"/>
+            </L7p:RequestParamRules>
+            <L7p:ResponseHeaderRules httpPassthroughRuleSet="included">
+                <L7p:ForwardAll booleanValue="true"/>
+                <L7p:Rules httpPassthroughRules="included">
+                    <L7p:item httpPassthroughRule="included">
+                        <L7p:Name stringValue="Set-Cookie"/>
+                    </L7p:item>
+                </L7p:Rules>
+            </L7p:ResponseHeaderRules>
+            <L7p:ResponseMsgDest stringValue="backendResponse"/>
+            <L7p:SamlAssertionVersion intValue="2"/>
+            <L7p:UsesNoKey booleanValue="true"/>
+        </L7p:HttpRoutingAssertion>
+        <L7p:Include>
+            <L7p:PolicyGuid stringValue="43dc6923-e338-4b29-99be-faf6cd5a40b8"/>
+            <L7p:PolicyName stringValue="Logging Post-Route"/>
+        </L7p:Include>
+        <L7p:HardcodedResponse>
+            <L7p:Base64ResponseBody stringValue="ewogICJyZXF1ZXN0UGFyYW1ldGVycyI6ICR7Y3JhZnRlZF9yZXNwb25zZX0sCiAgImN3cFNldHRpbmdTdGF0dXMiOiIke2RlbW9TZXR0aW5nfSIsCiAgJHtiYWNrZW5kUmVzcG9uc2UubWFpbnBhcnR9Cn0="/>
+            <L7p:ResponseContentType stringValue="application/json; charset=UTF-8"/>
+        </L7p:HardcodedResponse>
+        <L7p:Include>
+            <L7p:PolicyGuid stringValue="0e07338f-e1ef-47c4-9af9-1e32bae80765"/>
+            <L7p:PolicyName stringValue="Logging ServiceFinished"/>
+        </L7p:Include>
+    </wsp:All>
+</wsp:Policy>
