@@ -1,14 +1,194 @@
 {
     "clusterproperty": [
         {
+            "name": "otk.ovp.reuse_refresh_token",
+            "value": "false",
+            "id": "7d26b3199c8af6547c045e438ce87b92"
+        },
+        {
+            "name": "otk.ovp.reuse_refresh_expiration",
+            "value": "false",
+            "id": "7d26b3199c8af6547c045e438ce87b98"
+        },
+        {
+            "name": "otk.access_token.enable_jwt",
+            "value": "false",
+            "id": "ce71d24f2e5c1b26a2145df207944bc5"
+        },
+        {
+            "name": "otk.oauth2.mtls.client_certificate_header",
+            "value": "",
+            "id": "692457dbf95ea12802a160f12a58739e"
+        },
+        {
+            "name": "otk.dbsystem",
+            "value": "mysql",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c51a"
+        },
+        {
+            "name": "otk.separate_schemas",
+            "value": "false",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c522"
+        },
+        {
+            "name": "otk.cassandra.read_consistency_level",
+            "value": "LOCAL_QUORUM",
+            "id": "7fd1d8d297f99b30d61e229ee95abc1f"
+        },
+        {
+            "name": "otk.cassandra.write_consistency_level",
+            "value": "LOCAL_QUORUM",
+            "id": "0ad3d25a48cf4b75c0a6cd208cd411ec"
+        },
+        {
+            "name": "otk.max_oauth_token_count",
+            "value": "1",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c527"
+        },
+        {
+            "name": "otk.max_oauth_token_behaviour",
+            "value": "none",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c52c"
+        },
+        {
+            "name": "otk.fapi_baseline.enabled",
+            "value": "false",
+            "id": "6c90045fb5ddd510f6345ff700eb2bd5"
+        },
+        {
+            "name": "otk.fapi_advanced.enabled",
+            "value": "false",
+            "id": "9dd14f8c3bfe4508a37a2259910e571e"
+        },
+        {
+            "name": "otk.cache.default_max_entry_age_s",
+            "value": "300",
+            "id": "7d26b3199c8af6547c045e438ce87b0e"
+        },
+        {
+            "name": "otk.cache.default_max_entry_size",
+            "value": "10000",
+            "id": "7d26b3199c8af6547c045e438ce87b06"
+        },
+        {
+            "name": "otk.cache.default_max_entries",
+            "value": "10000",
+            "id": "7d26b3199c8af6547c045e438ce87afc"
+        },
+        {
             "name": "cluster.hostname",
             "value": "localhost",
             "id": "0000000000000000fffffffffff5519f"
         },
         {
+            "name": "otk.access_token.enable_jwt.query_db",
+            "value": "true",
+            "id": "ce71d24f2e5c1b26a2145df207944bc6"
+        },
+        {
+            "name": "otk.oauth2.token_type",
+            "value": "BEARER",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c531"
+        },
+        {
             "name": "otk.port",
             "value": "8443",
             "id": "b1a49fed80115088f84433b5b274825d"
+        },
+        {
+            "name": "otk.expose_client_secret",
+            "value": "false",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c537"
+        },
+        {
+            "name": "otk.enable_anonymous_client_export",
+            "value": "false",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c53c"
+        },
+        {
+            "name": "otk.client_credential.jwt.cache_lifetime_s",
+            "value": "1800",
+            "id": "7d26b3199c8af6547c045e438ce87b81"
+        },
+        {
+            "name": "otk.jwks.lookup_cache_lifetime_s",
+            "value": "60",
+            "id": "ce71d24f2e5c1b26a2145df207944bc7"
+        },
+        {
+            "name": "otk.access_token.enable_intended_audience_check",
+            "value": "false",
+            "id": "ce71d24f2e5c1b26a2145df207944bc4"
+        },
+        {
+            "name": "otk.hashed_secret.algorithm",
+            "value": "SHA-512",
+            "id": "70b846debfd7d277d6a3aab65a88faa9"
+        },
+        {
+            "name": "otk.hashed_secret.enable",
+            "value": "false",
+            "id": "70b846debfd7d277d6a3aab65a8ad6cd"
+        },
+        {
+            "name": "otk.oauth2.mtls.enable_thumbprint_validation",
+            "value": "true",
+            "id": "de5580193baf6827f6ff69746c3adc14"
+        },
+        {
+            "name": "otk.authorization_request_object.lookup_cache_lifetime_s",
+            "value": "60",
+            "id": "6ab033d24be7900bfc748a7cffe37730"
+        },
+        {
+            "name": "otk.token_revocation_list.enabled",
+            "value": "false",
+            "id": "7fd1d8d297f99b30d61e229ee95abc1e"
+        },
+        {
+            "name": "otk.allow_port_agnostic_redirect_uris",
+            "value": "false",
+            "id": "7fd1d8d297f99b30d61e229ee9587293"
+        },
+        {
+            "name": "otk.persist_dcr_software_statement",
+            "value": "false",
+            "id": "cf167b564434be66be5c46c64062de8e"
+        },
+        {
+            "name": "otk.open_banking_directory.jwks_url",
+            "value": "https:\/\/<<open_banking_directory_jwks_uri>>",
+            "id": "cf167b564434be66be5c46c64062e01a"
+        },
+        {
+            "name": "otk.enforce_dcr_software_statement",
+            "value": "false",
+            "id": "2ab3dd0e21ff9887303b082fa5fd823a"
+        },
+        {
+            "name": "otk.token_endpoint_polling_interval_s",
+            "value": "5",
+            "id": "ee2b318259fddfb67d44457e33a9ab01"
+        },
+        {
+            "name": "otk.oauth2.ciba.expired_id_token.enabled",
+            "value": "false",
+            "id": "758c91d75c19e23371bd54d8f0c42689"
+        },
+        {
+            "name": "otk.oauth2.ciba_token_endpoint_polling_interval_s",
+            "value": "5",
+            "id": "0ad3d25a48cf4b75c0a6cd208cd411eb"
+        },
+        {
+            "name": "otk.oauth2.client_secret.lifetime_m",
+            "value": "0",
+            "id": "f8ef62568acb33fe65d087b4b14687aa"
+        },
+        {
+            "name": "otk.refresh_token_deletion_strategy",
+            "value": "DELETE",
+            "id": "ad8c6bd08fb3f117c8fb018292af268f"
         },
         {
             "name": "demo.training.configuration",
