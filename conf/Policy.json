@@ -161,46 +161,6 @@
             "id": "e001cfd0c1c1ffaa18e187b5e72fc9d0"
         },
         {
-            "guid": "85fc86ff-4cac-4086-afa1-3673d74fe895",
-            "policyDetail": {
-                "folderId": "e001cfd0c1c1ffaa18e187b5e72fcbcd",
-                "guid": "85fc86ff-4cac-4086-afa1-3673d74fe895",
-                "name": "OTK Token DB GET",
-                "policyType": "Include",
-                "properties": {
-                    "property": [
-                        {
-                            "key": "hasRouting",
-                            "booleanValue": "false"
-                        },
-                        {
-                            "key": "revision",
-                            "longValue": "1"
-                        },
-                        {
-                            "key": "soap",
-                            "booleanValue": "false"
-                        }
-                    ]
-                },
-                "id": "e001cfd0c1c1ffaa18e187b5e72fcc49"
-            },
-            "resources": {
-                "resourceSet": [
-                    {
-                        "tag": "policy",
-                        "resource": [
-                            {
-                                "type": "policy",
-                                "content": "OTK Token DB GET.xml"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "id": "e001cfd0c1c1ffaa18e187b5e72fcc49"
-        },
-        {
             "guid": "bae27987-97aa-4029-bc62-778be9fa31b3",
             "policyDetail": {
                 "folderId": "e001cfd0c1c1ffaa18e187b5e72fcfce",
@@ -239,46 +199,6 @@
                 ]
             },
             "id": "e001cfd0c1c1ffaa18e187b5e72fd1ab"
-        },
-        {
-            "guid": "87a6a63d-7cc1-49bc-aab2-6e6c10e2659a",
-            "policyDetail": {
-                "folderId": "75d97bfe87badb85dee9ea06efceffda",
-                "guid": "87a6a63d-7cc1-49bc-aab2-6e6c10e2659a",
-                "name": "OTK Client DB GET Extension",
-                "policyType": "Include",
-                "properties": {
-                    "property": [
-                        {
-                            "key": "hasRouting",
-                            "booleanValue": "false"
-                        },
-                        {
-                            "key": "revision",
-                            "longValue": "1"
-                        },
-                        {
-                            "key": "soap",
-                            "booleanValue": "false"
-                        }
-                    ]
-                },
-                "id": "75d97bfe87badb85dee9ea06efcf001c"
-            },
-            "resources": {
-                "resourceSet": [
-                    {
-                        "tag": "policy",
-                        "resource": [
-                            {
-                                "type": "policy",
-                                "content": "OTK Client DB GET Extension.xml"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "id": "75d97bfe87badb85dee9ea06efcf001c"
         },
         {
             "guid": "a2206e7c-28e8-489d-862d-3b7c6da78079",
@@ -519,46 +439,6 @@
                 ]
             },
             "id": "161861da3a78c5dcdc62696d16914be5"
-        },
-        {
-            "guid": "150a6894-26c7-4514-86a2-c14348a18c9c",
-            "policyDetail": {
-                "folderId": "e001cfd0c1c1ffaa18e187b5e72fc918",
-                "guid": "150a6894-26c7-4514-86a2-c14348a18c9c",
-                "name": "OTK Client DB GET",
-                "policyType": "Include",
-                "properties": {
-                    "property": [
-                        {
-                            "key": "hasRouting",
-                            "booleanValue": "false"
-                        },
-                        {
-                            "key": "revision",
-                            "longValue": "1"
-                        },
-                        {
-                            "key": "soap",
-                            "booleanValue": "false"
-                        }
-                    ]
-                },
-                "id": "e001cfd0c1c1ffaa18e187b5e72fc994"
-            },
-            "resources": {
-                "resourceSet": [
-                    {
-                        "tag": "policy",
-                        "resource": [
-                            {
-                                "type": "policy",
-                                "content": "OTK Client DB GET.xml"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "id": "e001cfd0c1c1ffaa18e187b5e72fc994"
         },
         {
             "guid": "2b223445-0162-443d-90cf-b91d4a9ddacc",
@@ -1159,46 +1039,6 @@
                 ]
             },
             "id": "e001cfd0c1c1ffaa18e187b5e72fd147"
-        },
-        {
-            "guid": "fe455d03-c935-44d1-9b44-5ecad7832462",
-            "policyDetail": {
-                "folderId": "e001cfd0c1c1ffaa18e187b5e72fcbcd",
-                "guid": "fe455d03-c935-44d1-9b44-5ecad7832462",
-                "name": "OTK Token DB Delete",
-                "policyType": "Include",
-                "properties": {
-                    "property": [
-                        {
-                            "key": "hasRouting",
-                            "booleanValue": "false"
-                        },
-                        {
-                            "key": "revision",
-                            "longValue": "1"
-                        },
-                        {
-                            "key": "soap",
-                            "booleanValue": "false"
-                        }
-                    ]
-                },
-                "id": "e001cfd0c1c1ffaa18e187b5e72fccc1"
-            },
-            "resources": {
-                "resourceSet": [
-                    {
-                        "tag": "policy",
-                        "resource": [
-                            {
-                                "type": "policy",
-                                "content": "OTK Token DB Delete.xml"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "id": "e001cfd0c1c1ffaa18e187b5e72fccc1"
         },
         {
             "guid": "32285486-39c2-43da-aa40-7587c3300212",
