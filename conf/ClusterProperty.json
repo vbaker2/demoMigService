@@ -1,6 +1,16 @@
 {
     "clusterproperty": [
         {
+            "name": "cluster.hostname",
+            "value": "localhost",
+            "id": "0000000000000000fffffffffff5519f"
+        },
+        {
+            "name": "otk.port",
+            "value": "8443",
+            "id": "b1a49fed80115088f84433b5b274825d"
+        },
+        {
             "name": "demo.training.configuration",
             "value": "{\n  \"logmode\":\"audit\",\n  \"serviceurl\":\"\/demo\/migration\/jsontransform\",\n  \"serviceport\":\"8443\",\n  \"servicehost\":\"l7gw\",\n  \"loginuser\":\"nbreuer\",\n  \"demosetting\":\"demo\"\n}",
             "id": "b2383bdfe09adb9a8f7efac30c50d7f1"

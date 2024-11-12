@@ -1,6 +1,2498 @@
 {
     "encapsulatedassertion": [
         {
+            "name": "OTK OVP Configuration",
+            "guid": "7e2b4f64-e226-4a03-980a-c4603163acc0",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd82d",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "access_token_enable_jwt",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "host_oauth_ovp_server",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "reuse_refresh_expiration",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "reuse_refresh_token",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Exports the server location that implements the OVP (OAuth Validation Point) endpoints."
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "Storage_Access"
+                        }
+                    },
+                    {
+                        "key": "doc_usage",
+                        "stringValue": {
+                            "value": "Internal"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "ServerRegistry.gif"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "c6bf9e90-5ea0-4650-91f9-7c2a8291902f"
+                        }
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fda9a"
+        },
+        {
+            "name": "OTK Storage Configuration",
+            "guid": "db047e91-52db-4176-a3eb-a43aa0c2c67c",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fc9d0",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom input values",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "dbsystem",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "host_oauth_clientstore_server",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "host_oauth_session_server",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "host_oauth_tokenstore_server",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "max_oauth_token_behaviour",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "max_oauth_token_count",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "read_consistency_level",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "separate_schemas",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "write_consistency_level",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Exports variables that contain OTK configurations that are related to the persistence layer"
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "Configuration"
+                        }
+                    },
+                    {
+                        "key": "doc_require_customization",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "doc_usage",
+                        "stringValue": {
+                            "value": "Internal"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "ServerRegistry.gif"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "71039e77-2081-40df-a892-50097f1c18de"
+                        }
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fcac5"
+        },
+        {
+            "name": "OTK Token Get (token)",
+            "guid": "19902efe-b202-49da-a5d9-619c57ee842a",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd1ab",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "token",
+                        "argumentType": "string",
+                        "guiLabel": "Access Token",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "rtoken",
+                        "argumentType": "string",
+                        "guiLabel": "Refresh Token",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "client_key",
+                        "argumentType": "string",
+                        "guiLabel": "Client ID",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "resource_owner",
+                        "argumentType": "string",
+                        "guiLabel": "Resource Owner",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "token_status",
+                        "argumentType": "string",
+                        "guiLabel": "Token Status",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "6",
+                        "argumentName": "return_json",
+                        "argumentType": "boolean",
+                        "guiLabel": "Return as JSON?",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "7",
+                        "argumentName": "queryOffset",
+                        "argumentType": "string",
+                        "guiLabel": "Offset in DB query",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "8",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "content-type",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "dbsystem",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "resp",
+                        "resultType": "message"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Retrieves long living tokens from the token database."
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "Storage_Delegate"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "up-button.gif"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "bae27987-97aa-4029-bc62-778be9fa31b3"
+                        }
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fd20f"
+        },
+        {
+            "name": "OTK Cache Look Up",
+            "guid": "68ad78a1-f4a1-4568-91e1-0980d95c75cd",
+            "policyReference": {
+                "id": "161861da3a78c5dcdc62696d16914bbb",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "cacheID",
+                        "argumentType": "string",
+                        "guiLabel": "The Cache ID (required)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "cacheKey",
+                        "argumentType": "string",
+                        "guiLabel": "The Cache Key (identifier) for this entry (required)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "maxEntryAge",
+                        "argumentType": "string",
+                        "guiLabel": "Max. entry age in seconds (optional if a default value exists)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.msg",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "resp",
+                        "resultType": "message"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Looks Up an item associated with key: cacheKey in cache with ID: cacheID and returns it in values, if the item exists. "
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "customAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "lookup16.gif"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "fb88be42-83e7-4d36-a865-34e53d4f4218"
+                        }
+                    }
+                ]
+            },
+            "id": "161861da3a78c5dcdc62696d16914c21"
+        },
+        {
+            "name": "OTK Cache Store",
+            "guid": "e5ee8bcf-1796-4297-88dd-c838031a6f6a",
+            "policyReference": {
+                "id": "161861da3a78c5dcdc62696d16914be5",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "cacheID",
+                        "argumentType": "string",
+                        "guiLabel": "The Cache ID (required)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "cacheKey",
+                        "argumentType": "string",
+                        "guiLabel": "The Cache Key (identifier) for this entry (required)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "maxEntries",
+                        "argumentType": "string",
+                        "guiLabel": "Max. number of entries for this cache (optional if a default value exists)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "maxEntryAge",
+                        "argumentType": "string",
+                        "guiLabel": "Max. entry age in seconds (optional if a default value exists)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "maxEntrySize",
+                        "argumentType": "string",
+                        "guiLabel": "Max. size for each entry (optional if a default value exists)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "6",
+                        "argumentName": "msg",
+                        "argumentType": "message",
+                        "guiLabel": "The message to be cached (required, must exist in the preceeding policy context)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "7",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.msg",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Writes an item to cache with ID: cacheID with key: cacheKey.  If the cache does not exist, one will be created.  If the key exists, the existing item will be overwritten."
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "customAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconBase64",
+                        "stringValue": {
+                            "value": "R0lGODlhEAAQAPcAAAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDAwP8AAAD\/AP\/\/AAAA\/\/8A\/wD\/\r\n\/\/\/\/\/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\r\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAZgAAmQAAzAAA\/wAzAAAzMwAzZgAzmQAzzAAz\/wBm\r\nAABmMwBmZgBmmQBmzABm\/wCZAACZMwCZZgCZmQCZzACZ\/wDMAADMMwDMZgDMmQDMzADM\/wD\/AAD\/\r\nMwD\/ZgD\/mQD\/zAD\/\/zMAADMAMzMAZjMAmTMAzDMA\/zMzADMzMzMzZjMzmTMzzDMz\/zNmADNmMzNm\r\nZjNmmTNmzDNm\/zOZADOZMzOZZjOZmTOZzDOZ\/zPMADPMMzPMZjPMmTPMzDPM\/zP\/ADP\/MzP\/ZjP\/\r\nmTP\/zDP\/\/2YAAGYAM2YAZmYAmWYAzGYA\/2YzAGYzM2YzZmYzmWYzzGYz\/2ZmAGZmM2ZmZmZmmWZm\r\nzGZm\/2aZAGaZM2aZZmaZmWaZzGaZ\/2bMAGbMM2bMZmbMmWbMzGbM\/2b\/AGb\/M2b\/Zmb\/mWb\/zGb\/\r\n\/5kAAJkAM5kAZpkAmZkAzJkA\/5kzAJkzM5kzZpkzmZkzzJkz\/5lmAJlmM5lmZplmmZlmzJlm\/5mZ\r\nAJmZM5mZZpmZmZmZzJmZ\/5nMAJnMM5nMZpnMmZnMzJnM\/5n\/AJn\/M5n\/Zpn\/mZn\/zJn\/\/8wAAMwA\r\nM8wAZswAmcwAzMwA\/8wzAMwzM8wzZswzmcwzzMwz\/8xmAMxmM8xmZsxmmcxmzMxm\/8yZAMyZM8yZ\r\nZsyZmcyZzMyZ\/8zMAMzMM8zMZszMmczMzMzM\/8z\/AMz\/M8z\/Zsz\/mcz\/zMz\/\/\/8AAP8AM\/8AZv8A\r\nmf8AzP8A\/\/8zAP8zM\/8zZv8zmf8zzP8z\/\/9mAP9mM\/9mZv9mmf9mzP9m\/\/+ZAP+ZM\/+ZZv+Zmf+Z\r\nzP+Z\/\/\/MAP\/MM\/\/MZv\/Mmf\/MzP\/M\/\/\/\/AP\/\/M\/\/\/Zv\/\/mf\/\/zP\/\/\/yH5BAEAABAALAAAAAAQABAA\r\nAAhWAFGg+EewoEGDAgceXEgwYUOGCAX+UwixocOKBS9OlBjxIop+\/PpRZPgxZMiRBwWCFIkS4amE\r\nLyui4IeqDyqOJE\/xexkT4syaN1tm1MlTaEagRjsWDAgAOw=="
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "58143e14-a1cd-4cca-b25a-e2d637a42bbc"
+                        }
+                    }
+                ]
+            },
+            "id": "161861da3a78c5dcdc62696d16914c44"
+        },
+        {
+            "name": "OTK Client GET",
+            "guid": "290511a8-b775-47a7-98ab-7be386da2105",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd10a",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "client_ident",
+                        "argumentType": "string",
+                        "guiLabel": "Client Identifier (DB)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "client_key",
+                        "argumentType": "string",
+                        "guiLabel": "Client ID",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "name",
+                        "argumentType": "string",
+                        "guiLabel": "Client Name",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "org",
+                        "argumentType": "string",
+                        "guiLabel": "Organization",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "registered_by",
+                        "argumentType": "string",
+                        "guiLabel": "Registered By",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "6",
+                        "argumentName": "operation",
+                        "argumentType": "string",
+                        "guiLabel": "Operation to use (get|getKey|getAll)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "7",
+                        "argumentName": "format",
+                        "argumentType": "string",
+                        "guiLabel": "Format for result (json|xml, default=xml)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "8",
+                        "argumentName": "queryOffset",
+                        "argumentType": "string",
+                        "guiLabel": "Offset in DB query",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "9",
+                        "argumentName": "filterStatus",
+                        "argumentType": "string",
+                        "guiLabel": "Client Key Status (ENABLED|DISABLED)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "10",
+                        "argumentName": "environment",
+                        "argumentType": "string",
+                        "guiLabel": "Environment",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "11",
+                        "argumentName": "master",
+                        "argumentType": "string",
+                        "guiLabel": "Select only Master-Keys (true-false)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "12",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "content-type",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "resp",
+                        "resultType": "message"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Retrieves values about the given client (or client_id) using the input parameters."
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "Storage_Delegate"
+                        }
+                    },
+                    {
+                        "key": "doc_in_operation",
+                        "stringValue": {
+                            "value": "Use 'get' to retrieve client values, 'getKey' for client_id values. 'getAll' is only valid in combination with 'Client ID'"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "up-button.gif"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "2b223445-0162-443d-90cf-b91d4a9ddacc"
+                        }
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fd297"
+        },
+        {
+            "name": "OTK Profile Configuration",
+            "guid": "355ca731-f92a-4d64-b41a-8533eedfa651",
+            "policyReference": {
+                "id": "2a93e2b64633d7874eb692e23adc6c42",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "client_id",
+                        "argumentType": "string",
+                        "guiLabel": "Client Id",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "client_key_custom",
+                        "argumentType": "string",
+                        "guiLabel": "Client Key Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_profile.default",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_profile.fapi_advanced",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_profile.fapi_baseline",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Used to define the OTK OAUTH2 Server running profile."
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "7e2f84c6-f8b6-423f-ba2a-bd802fa9a17d"
+                        }
+                    }
+                ]
+            },
+            "id": "2a93e2b64633d7874eb692e23adc6d59"
+        },
+        {
+            "name": "OTK Access Token Retrieval",
+            "guid": "dc16f9da-c833-4b0a-8525-8a41ce420795",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd86a",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "allow_header",
+                        "argumentType": "boolean",
+                        "guiLabel": "Allow Authorization Header",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "allow_query",
+                        "argumentType": "boolean",
+                        "guiLabel": "Allow Body Parameter",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "disallow_query",
+                        "argumentType": "boolean",
+                        "guiLabel": "Disallow Query Parameter",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "auth_header",
+                        "argumentType": "string",
+                        "guiLabel": "Authentication Header",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "auth_param_token",
+                        "argumentType": "string",
+                        "guiLabel": "Parameter",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "6",
+                        "argumentName": "given_access_token",
+                        "argumentType": "string",
+                        "guiLabel": "Access Token (Bearer only)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "7",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "access_token",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "access_token_type",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "auth_header",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "auth_scheme",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Finds the OAuth 2.0 access_token within the http request header, as http request parameter or uses the given one. If will fail if a token is found at multiple locations."
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "OAuth_Validation"
+                        }
+                    },
+                    {
+                        "key": "doc_usage",
+                        "stringValue": {
+                            "value": "Internal"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "oauth.png"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "14f8a882-e66c-4a70-88d8-0128e2922744"
+                        }
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fdaa0"
+        },
+        {
+            "name": "OTK Fail with error message",
+            "guid": "56bd8147-3ab4-4d09-9460-8b2de02b7a9e",
+            "policyReference": {
+                "id": "d1bde3d2021a469e82ebf8cac288bbd1",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "givenErrorCode",
+                        "argumentType": "string",
+                        "guiLabel": "Error code",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "apiPrefix",
+                        "argumentType": "string",
+                        "guiLabel": "API prefix for error code",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "content-type",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.msg",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "status",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "This assertion returns an error message, http status and content-type value associated with the given 'Error code'."
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "Error_Handling"
+                        }
+                    },
+                    {
+                        "key": "doc_in_apiPrefix",
+                        "stringValue": {
+                            "value": "A value combined with the given error code. If, for example, an API would be identifiedby the values '1234' and the given error code is '111' the exported variable 'error.code' would contain '1234111'"
+                        }
+                    },
+                    {
+                        "key": "doc_in_givenErrorCode",
+                        "stringValue": {
+                            "value": "A value associated with a certain error. If that value is unkown it will be replaced with '000' within the output variable 'error.code'"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "Stop16.gif"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "9e864ce5-1275-477f-a642-b5e867f367a3"
+                        }
+                    }
+                ]
+            },
+            "id": "d1bde3d2021a469e82ebf8cac288bd97"
+        },
+        {
+            "name": "OTK Validate JWT OAuth Token",
+            "guid": "fce241db-a269-4dfe-adad-7790748c4940",
+            "policyReference": {
+                "id": "d003cc363d3af3fa8c1c0dfed091ccfe",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "access_token",
+                        "argumentType": "string",
+                        "guiLabel": "access_token",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "access_token_enable_jwt",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "jwt_id",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "query_db",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "resp",
+                        "resultType": "message"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "This encapsulated assertion is used to validate JWT as OAuth Token. Customization to the default implementation can be done in the configuration policy #OTK Validate JWT OAuth Token"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "oauth.png"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "ebc7bee2-0d5e-4348-89cf-c3a84ca693a6"
+                        }
+                    }
+                ]
+            },
+            "id": "d003cc363d3af3fa8c1c0dfed091cd38"
+        },
+        {
+            "name": "OTK Variable Configuration",
+            "guid": "2e6e2ef3-a36f-4548-a2c4-7b369b7ae184",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd183",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "access_token_enable_jwt",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "allow_insecure_oauth_params",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "allow_port_agnostic_redirect_uris",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "ciba_token_endpoint_polling_interval_sec",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "client_credential_jwt_cache_lifetime",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "client_secret_lifetime_m",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "enable_anonymous_client_export",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "enable_intended_audience_check",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "enforce_dcr_software_statement",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "export_custom",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "expose_client_secret",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "hashed_secret_algorithm",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "hashed_secret_enable",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "hashed_secret_salt",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "host_oauth2_auth_server",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "host_oauth2_auth_template_server",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "jwks_lookup_cache_lifetime",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "jwks_uri_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "location_website_template",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "location_website_template_resources",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_auth_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_auth_template_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_backchannel_authentication_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_device_authorization_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_device_verification_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_mtls_enable_thumbprint_validation",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_par_authorization_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_profile.default",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_server_certificate",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_server_hostname",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_server_port",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_server_url_prefix",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_token_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_token_revocation_list_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_token_revocation_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_token_type",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oauth2_version",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "oidc_register_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "persist_dcr_software_statement",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "request_object_lookup_cache_lifetime",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "service_documentation_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "token_endpoint_polling_interval_sec",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "token_revocation_list_enabled",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "userinfo_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "usersession_logout_path",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "usersession_status_path",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Exports variables that are required to process OAuth requests."
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "Configuration"
+                        }
+                    },
+                    {
+                        "key": "doc_require_customization",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "ServerRegistry.gif"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "e64823db-25f0-462a-a226-44908c239fe6"
+                        }
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fd2da"
+        },
+        {
+            "name": "OTK Encode base64url",
+            "guid": "bed74d70-cc8b-46b8-8efc-f5a8a995b2f3",
+            "policyReference": {
+                "id": "88814b55aaa386bd52671d5d4279e349",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "base64_encoded",
+                        "argumentType": "string",
+                        "guiLabel": "Base64 encoded string",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "base64url_encoded",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "This encass converts base64 encoded string to base64url encoded string"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "21627233-beba-4c3a-b038-9490c5fc0fc7"
+                        }
+                    }
+                ]
+            },
+            "id": "88814b55aaa386bd52671d5d4279e3a0"
+        },
+        {
+            "name": "OTK RESOURCE Verification - Extended",
+            "guid": "b45b1910-a4c2-442a-b953-ece942683972",
+            "policyReference": {
+                "id": "5f5ee5e6eebabb324327c7c4b8662eda",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "resource.granted",
+                        "argumentType": "string",
+                        "guiLabel": "Granted Resources",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "resource.required",
+                        "argumentType": "string",
+                        "guiLabel": "Required Resource",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "any_resource_required",
+                        "argumentType": "string",
+                        "guiLabel": "Pass if any of the required RESOURCEs are found (true|false)?",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "disable_audience_check",
+                        "argumentType": "string",
+                        "guiLabel": "Disable audience check (true|false)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "enable_intended_audience_check",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "resource.result",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "customAssertions"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "725d6e22-d7c0-4e73-a4e6-fbc46aef0f87"
+                        }
+                    }
+                ]
+            },
+            "id": "5f5ee5e6eebabb324327c7c4b8662f5b"
+        },
+        {
+            "name": "OTK SCOPE Verification",
+            "guid": "f78f0f85-00e2-49b1-95e4-e520df255c9c",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd147",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "scope.granted",
+                        "argumentType": "string",
+                        "guiLabel": "Granted SCOPE",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "scope.required",
+                        "argumentType": "string",
+                        "guiLabel": "Required SCOPE",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "fail",
+                        "argumentType": "string",
+                        "guiLabel": "Fail if the SCOPE is found (true|false)?",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "any",
+                        "argumentType": "string",
+                        "guiLabel": "Pass if any of the required SCOPEs are found (true|false)?",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Verifies SCOPE and fails if the requested SCOPE does not match the granted one."
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "Access_Control"
+                        }
+                    },
+                    {
+                        "key": "doc_in_scope.granted",
+                        "stringValue": {
+                            "value": "A space separated list of granted\/ valid SCOPE values"
+                        }
+                    },
+                    {
+                        "key": "doc_in_scope.required",
+                        "stringValue": {
+                            "value": "A space separated list of required SCOPE values"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "oauth.png"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "2792f49f-c879-4eb1-a1e1-326bad2dcb74"
+                        }
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fd28f"
+        },
+        {
+            "name": "OTK Token Delete",
+            "guid": "ada963ed-0428-4ead-8576-9ef79193752c",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd16f",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "access_token",
+                        "argumentType": "string",
+                        "guiLabel": "Access Token",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "refresh_token",
+                        "argumentType": "string",
+                        "guiLabel": "Refresh Token",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "temp_token",
+                        "argumentType": "string",
+                        "guiLabel": "Temporary Token (code|request_token)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "client_key",
+                        "argumentType": "string",
+                        "guiLabel": "Client ID",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "content-type",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "result",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Deletes a token from the persistence layer."
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "Storage_Delegate"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "down-button.gif"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "32285486-39c2-43da-aa40-7587c3300212"
+                        }
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fd25d"
+        },
+        {
+            "name": "OTK OAuth 2.0 Token Validation - BEARER",
+            "guid": "2c8a8e1d-fbcd-4d9a-b866-981d923aeb83",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd1d3",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "tokenValues",
+                        "argumentType": "message",
+                        "guiLabel": "Token values",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "scope_fail",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "scope_required",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "access_token",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "onetime",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "6",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "7",
+                        "argumentName": "resource_required",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "8",
+                        "argumentName": "access_token_type",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "9",
+                        "argumentName": "client_cert_base64",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "10",
+                        "argumentName": "token_cert_thumbprint",
+                        "argumentType": "string",
+                        "guiLabel": "Token Certificate Thumbprint",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "11",
+                        "argumentName": "any_resource_required",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "12",
+                        "argumentName": "disable_audience_check",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "content-type",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "resp",
+                        "resultType": "message"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "artifactVersion",
+                        "stringValue": {
+                            "value": "8cf8496aad6380a24f33889a72ad7bed6d4dfbba"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Validates a given Bearer token profile access_token."
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "OAuth_Validation"
+                        }
+                    },
+                    {
+                        "key": "doc_usage",
+                        "stringValue": {
+                            "value": "Internal"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "validate.gif"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "f07df530-d404-47ad-88a6-dadb4421ead3"
+                        }
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fd322"
+        },
+        {
+            "name": "OTK v2GenerateRequestMac",
+            "guid": "e1375d51-4432-49a9-876f-9f45f15c5756",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd0f6",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "ext",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "http_method",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "mac_algorithm",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "mac_key",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "nonce",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "6",
+                        "argumentName": "timestamp_sec",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "7",
+                        "argumentName": "url",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "8",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "mac",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Generates request MAC using HMAC-SHA1 algorithm"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "31b00c3c-a333-4e44-8e00-6bfd51b974a8"
+                        }
+                    }
+                ]
+            },
+            "id": "35f5ccf02323692c2c4a2f0545010a90"
+        },
+        {
+            "name": "OTK OAuth 2.0 Token Validation - MAC",
+            "guid": "93e26a5f-02b5-4a0e-8d76-7ba7e171871a",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd1e7",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "tokenValues",
+                        "argumentType": "message",
+                        "guiLabel": "Token values",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "http_method",
+                        "argumentType": "string",
+                        "guiLabel": "Used HTTP method",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "url",
+                        "argumentType": "string",
+                        "guiLabel": "Request URL",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "scope_fail",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "scope_required",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "6",
+                        "argumentName": "access_token",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "7",
+                        "argumentName": "onetime",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "8",
+                        "argumentName": "auth_header",
+                        "argumentType": "string",
+                        "guiPrompt": "false"
+                    },
+                    {
+                        "ordinal": "9",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "content-type",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "resp",
+                        "resultType": "message"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "artifactVersion",
+                        "stringValue": {
+                            "value": "c08a08af82a37b3eaa30209bc5077f13eddc4bb5"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Validates a given MAC token profile access_token."
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "OAuth_Validation"
+                        }
+                    },
+                    {
+                        "key": "doc_usage",
+                        "stringValue": {
+                            "value": "Internal"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "validate.gif"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "55caa40c-7b56-40ff-a5b1-2933934b787f"
+                        }
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fd336"
+        },
+        {
+            "name": "OTK Require OAuth 2.0 Token",
+            "guid": "393bcb93-82ad-4b55-8333-1119f607a560",
+            "policyReference": {
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd841",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "scope_required",
+                        "argumentType": "string",
+                        "guiLabel": "Required SCOPE(s)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "cache_lifetime",
+                        "argumentType": "int",
+                        "guiLabel": "Cache validation result (s)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "onetime",
+                        "argumentType": "boolean",
+                        "guiLabel": "Is this a one-time access_token?",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "scope_fail",
+                        "argumentType": "boolean",
+                        "guiLabel": "Fail if this SCOPE was granted?",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "given_access_token",
+                        "argumentType": "string",
+                        "guiLabel": "Access Token (Bearer only, optional)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "6",
+                        "argumentName": "disallow_query",
+                        "argumentType": "boolean",
+                        "guiLabel": "Disallow retrieving access_token from query string",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "7",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "8",
+                        "argumentName": "resource_required",
+                        "argumentType": "string",
+                        "guiLabel": "Required Audience",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "9",
+                        "argumentName": "any_resource_required",
+                        "argumentType": "boolean",
+                        "guiLabel": "Pass if any of the required audience are found ?",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "10",
+                        "argumentName": "disable_audience_check",
+                        "argumentType": "boolean",
+                        "guiLabel": "Disable intended audience check",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "access_token",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "access_token_type",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "content-type",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.msg",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "session.act_claim",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "session.client_id",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "session.custom",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "session.expires_at",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "session.may_act_claim",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "session.resource",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "session.resource_verified",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "session.scope",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "session.subscriber_id",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "status",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "uuid_token",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Validates an OAuth 2.0 access_token for a request. By default the request will fail if the given access_token has expired or does not match the given configuration."
+                        }
+                    },
+                    {
+                        "key": "doc_category",
+                        "stringValue": {
+                            "value": "Access_Control"
+                        }
+                    },
+                    {
+                        "key": "doc_in_cache_lifetime",
+                        "stringValue": {
+                            "value": "Time in seconds for which the access_token will not be validated again. Use this value as a compromise between increasing performance and security. A typical value would be '30'"
+                        }
+                    },
+                    {
+                        "key": "doc_in_given_access_token",
+                        "stringValue": {
+                            "value": "Use this field if no access_token is received through the request message but was issued out-of-band"
+                        }
+                    },
+                    {
+                        "key": "doc_in_onetime",
+                        "stringValue": {
+                            "value": "If set to 'true' the access_token (and the associated refresh_token) will be invalidated after being used once. Default = 'false'"
+                        }
+                    },
+                    {
+                        "key": "doc_in_scope_fail",
+                        "stringValue": {
+                            "value": "If set to 'true' the assertion fails if the given SCOPE was granted for this access_token"
+                        }
+                    },
+                    {
+                        "key": "doc_in_scope_required",
+                        "stringValue": {
+                            "value": "A space separated list of SCOPE values this access_token MUST have been granted for"
+                        }
+                    },
+                    {
+                        "key": "doc_out_access_token",
+                        "stringValue": {
+                            "value": "The access_token of the request"
+                        }
+                    },
+                    {
+                        "key": "doc_out_content-type",
+                        "stringValue": {
+                            "value": "The content-type of the 'error.msg' if it exists"
+                        }
+                    },
+                    {
+                        "key": "doc_out_session.client_id",
+                        "stringValue": {
+                            "value": "The client_id for which the access_token was granted"
+                        }
+                    },
+                    {
+                        "key": "doc_out_session.custom",
+                        "stringValue": {
+                            "value": "A JSON structure containing the used grant_type, the client_type and values specified in the custom field of the associated client_id"
+                        }
+                    },
+                    {
+                        "key": "doc_out_session.scope",
+                        "stringValue": {
+                            "value": "The SCOPE that was granted to the access_token"
+                        }
+                    },
+                    {
+                        "key": "doc_out_session.subscriber_id",
+                        "stringValue": {
+                            "value": "The user who granted the access_token\/ client"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "internalAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "oauth.png"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "495c191d-9fb1-4f22-a8ec-76ecacf8bef4"
+                        }
+                    }
+                ]
+            },
+            "id": "3f6b5c92ca2ac3665bc7d8780bc4d718"
+        },
+        {
             "name": "demo_returnRequestParameterAsJSON",
             "guid": "14bb7541-8b93-4a6a-b294-bc8981f25cdd",
             "policyReference": {
