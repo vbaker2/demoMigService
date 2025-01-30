@@ -358,225 +358,6 @@
             "id": "e001cfd0c1c1ffaa18e187b5e72fd20f"
         },
         {
-            "name": "OTK Cache Look Up",
-            "guid": "68ad78a1-f4a1-4568-91e1-0980d95c75cd",
-            "policyReference": {
-                "id": "161861da3a78c5dcdc62696d16914bbb",
-                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
-            },
-            "encapsulatedArguments": {
-                "encapsulatedAssertionArgument": [
-                    {
-                        "ordinal": "1",
-                        "argumentName": "cacheID",
-                        "argumentType": "string",
-                        "guiLabel": "The Cache ID (required)",
-                        "guiPrompt": "true"
-                    },
-                    {
-                        "ordinal": "2",
-                        "argumentName": "cacheKey",
-                        "argumentType": "string",
-                        "guiLabel": "The Cache Key (identifier) for this entry (required)",
-                        "guiPrompt": "true"
-                    },
-                    {
-                        "ordinal": "3",
-                        "argumentName": "maxEntryAge",
-                        "argumentType": "string",
-                        "guiLabel": "Max. entry age in seconds (optional if a default value exists)",
-                        "guiPrompt": "true"
-                    },
-                    {
-                        "ordinal": "4",
-                        "argumentName": "custom",
-                        "argumentType": "string",
-                        "guiLabel": "Custom",
-                        "guiPrompt": "true"
-                    }
-                ]
-            },
-            "encapsulatedResults": {
-                "encapsulatedAssertionResult": [
-                    {
-                        "resultName": "custom_data",
-                        "resultType": "string"
-                    },
-                    {
-                        "resultName": "error.code",
-                        "resultType": "string"
-                    },
-                    {
-                        "resultName": "error.msg",
-                        "resultType": "string"
-                    },
-                    {
-                        "resultName": "resp",
-                        "resultType": "message"
-                    }
-                ]
-            },
-            "properties": {
-                "property": [
-                    {
-                        "key": "allowTracing",
-                        "stringValue": {
-                            "value": "true"
-                        }
-                    },
-                    {
-                        "key": "description",
-                        "stringValue": {
-                            "value": "Looks Up an item associated with key: cacheKey in cache with ID: cacheID and returns it in values, if the item exists. "
-                        }
-                    },
-                    {
-                        "key": "paletteFolder",
-                        "stringValue": {
-                            "value": "customAssertions"
-                        }
-                    },
-                    {
-                        "key": "paletteIconResourceName",
-                        "stringValue": {
-                            "value": "lookup16.gif"
-                        }
-                    },
-                    {
-                        "key": "passMetricsToParent",
-                        "stringValue": {
-                            "value": "false"
-                        }
-                    },
-                    {
-                        "key": "policyGuid",
-                        "stringValue": {
-                            "value": "fb88be42-83e7-4d36-a865-34e53d4f4218"
-                        }
-                    }
-                ]
-            },
-            "id": "161861da3a78c5dcdc62696d16914c21"
-        },
-        {
-            "name": "OTK Cache Store",
-            "guid": "e5ee8bcf-1796-4297-88dd-c838031a6f6a",
-            "policyReference": {
-                "id": "161861da3a78c5dcdc62696d16914be5",
-                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
-            },
-            "encapsulatedArguments": {
-                "encapsulatedAssertionArgument": [
-                    {
-                        "ordinal": "1",
-                        "argumentName": "cacheID",
-                        "argumentType": "string",
-                        "guiLabel": "The Cache ID (required)",
-                        "guiPrompt": "true"
-                    },
-                    {
-                        "ordinal": "2",
-                        "argumentName": "cacheKey",
-                        "argumentType": "string",
-                        "guiLabel": "The Cache Key (identifier) for this entry (required)",
-                        "guiPrompt": "true"
-                    },
-                    {
-                        "ordinal": "3",
-                        "argumentName": "maxEntries",
-                        "argumentType": "string",
-                        "guiLabel": "Max. number of entries for this cache (optional if a default value exists)",
-                        "guiPrompt": "true"
-                    },
-                    {
-                        "ordinal": "4",
-                        "argumentName": "maxEntryAge",
-                        "argumentType": "string",
-                        "guiLabel": "Max. entry age in seconds (optional if a default value exists)",
-                        "guiPrompt": "true"
-                    },
-                    {
-                        "ordinal": "5",
-                        "argumentName": "maxEntrySize",
-                        "argumentType": "string",
-                        "guiLabel": "Max. size for each entry (optional if a default value exists)",
-                        "guiPrompt": "true"
-                    },
-                    {
-                        "ordinal": "6",
-                        "argumentName": "msg",
-                        "argumentType": "message",
-                        "guiLabel": "The message to be cached (required, must exist in the preceeding policy context)",
-                        "guiPrompt": "true"
-                    },
-                    {
-                        "ordinal": "7",
-                        "argumentName": "custom",
-                        "argumentType": "string",
-                        "guiLabel": "Custom",
-                        "guiPrompt": "true"
-                    }
-                ]
-            },
-            "encapsulatedResults": {
-                "encapsulatedAssertionResult": [
-                    {
-                        "resultName": "custom_data",
-                        "resultType": "string"
-                    },
-                    {
-                        "resultName": "error.code",
-                        "resultType": "string"
-                    },
-                    {
-                        "resultName": "error.msg",
-                        "resultType": "string"
-                    }
-                ]
-            },
-            "properties": {
-                "property": [
-                    {
-                        "key": "allowTracing",
-                        "stringValue": {
-                            "value": "true"
-                        }
-                    },
-                    {
-                        "key": "description",
-                        "stringValue": {
-                            "value": "Writes an item to cache with ID: cacheID with key: cacheKey.  If the cache does not exist, one will be created.  If the key exists, the existing item will be overwritten."
-                        }
-                    },
-                    {
-                        "key": "paletteFolder",
-                        "stringValue": {
-                            "value": "customAssertions"
-                        }
-                    },
-                    {
-                        "key": "paletteIconBase64",
-                        "stringValue": {
-                            "value": "R0lGODlhEAAQAPcAAAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDAwP8AAAD\/AP\/\/AAAA\/\/8A\/wD\/\r\n\/\/\/\/\/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\r\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAZgAAmQAAzAAA\/wAzAAAzMwAzZgAzmQAzzAAz\/wBm\r\nAABmMwBmZgBmmQBmzABm\/wCZAACZMwCZZgCZmQCZzACZ\/wDMAADMMwDMZgDMmQDMzADM\/wD\/AAD\/\r\nMwD\/ZgD\/mQD\/zAD\/\/zMAADMAMzMAZjMAmTMAzDMA\/zMzADMzMzMzZjMzmTMzzDMz\/zNmADNmMzNm\r\nZjNmmTNmzDNm\/zOZADOZMzOZZjOZmTOZzDOZ\/zPMADPMMzPMZjPMmTPMzDPM\/zP\/ADP\/MzP\/ZjP\/\r\nmTP\/zDP\/\/2YAAGYAM2YAZmYAmWYAzGYA\/2YzAGYzM2YzZmYzmWYzzGYz\/2ZmAGZmM2ZmZmZmmWZm\r\nzGZm\/2aZAGaZM2aZZmaZmWaZzGaZ\/2bMAGbMM2bMZmbMmWbMzGbM\/2b\/AGb\/M2b\/Zmb\/mWb\/zGb\/\r\n\/5kAAJkAM5kAZpkAmZkAzJkA\/5kzAJkzM5kzZpkzmZkzzJkz\/5lmAJlmM5lmZplmmZlmzJlm\/5mZ\r\nAJmZM5mZZpmZmZmZzJmZ\/5nMAJnMM5nMZpnMmZnMzJnM\/5n\/AJn\/M5n\/Zpn\/mZn\/zJn\/\/8wAAMwA\r\nM8wAZswAmcwAzMwA\/8wzAMwzM8wzZswzmcwzzMwz\/8xmAMxmM8xmZsxmmcxmzMxm\/8yZAMyZM8yZ\r\nZsyZmcyZzMyZ\/8zMAMzMM8zMZszMmczMzMzM\/8z\/AMz\/M8z\/Zsz\/mcz\/zMz\/\/\/8AAP8AM\/8AZv8A\r\nmf8AzP8A\/\/8zAP8zM\/8zZv8zmf8zzP8z\/\/9mAP9mM\/9mZv9mmf9mzP9m\/\/+ZAP+ZM\/+ZZv+Zmf+Z\r\nzP+Z\/\/\/MAP\/MM\/\/MZv\/Mmf\/MzP\/M\/\/\/\/AP\/\/M\/\/\/Zv\/\/mf\/\/zP\/\/\/yH5BAEAABAALAAAAAAQABAA\r\nAAhWAFGg+EewoEGDAgceXEgwYUOGCAX+UwixocOKBS9OlBjxIop+\/PpRZPgxZMiRBwWCFIkS4amE\r\nLyui4IeqDyqOJE\/xexkT4syaN1tm1MlTaEagRjsWDAgAOw=="
-                        }
-                    },
-                    {
-                        "key": "passMetricsToParent",
-                        "stringValue": {
-                            "value": "false"
-                        }
-                    },
-                    {
-                        "key": "policyGuid",
-                        "stringValue": {
-                            "value": "58143e14-a1cd-4cca-b25a-e2d637a42bbc"
-                        }
-                    }
-                ]
-            },
-            "id": "161861da3a78c5dcdc62696d16914c44"
-        },
-        {
             "name": "OTK Client GET",
             "guid": "290511a8-b775-47a7-98ab-7be386da2105",
             "policyReference": {
@@ -961,6 +742,225 @@
                 ]
             },
             "id": "e001cfd0c1c1ffaa18e187b5e72fdaa0"
+        },
+        {
+            "name": "OTK Cache Look Up",
+            "guid": "68ad78a1-f4a1-4568-91e1-0980d95c75cd",
+            "policyReference": {
+                "id": "161861da3a78c5dcdc62696d16914bbb",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "cacheID",
+                        "argumentType": "string",
+                        "guiLabel": "The Cache ID (required)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "cacheKey",
+                        "argumentType": "string",
+                        "guiLabel": "The Cache Key (identifier) for this entry (required)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "maxEntryAge",
+                        "argumentType": "string",
+                        "guiLabel": "Max. entry age in seconds (optional if a default value exists)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.msg",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "resp",
+                        "resultType": "message"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Looks Up an item associated with key: cacheKey in cache with ID: cacheID and returns it in values, if the item exists. "
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "customAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconResourceName",
+                        "stringValue": {
+                            "value": "lookup16.gif"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "fb88be42-83e7-4d36-a865-34e53d4f4218"
+                        }
+                    }
+                ]
+            },
+            "id": "161861da3a78c5dcdc62696d16914c21"
+        },
+        {
+            "name": "OTK Cache Store",
+            "guid": "e5ee8bcf-1796-4297-88dd-c838031a6f6a",
+            "policyReference": {
+                "id": "161861da3a78c5dcdc62696d16914be5",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": {
+                "encapsulatedAssertionArgument": [
+                    {
+                        "ordinal": "1",
+                        "argumentName": "cacheID",
+                        "argumentType": "string",
+                        "guiLabel": "The Cache ID (required)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "2",
+                        "argumentName": "cacheKey",
+                        "argumentType": "string",
+                        "guiLabel": "The Cache Key (identifier) for this entry (required)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "3",
+                        "argumentName": "maxEntries",
+                        "argumentType": "string",
+                        "guiLabel": "Max. number of entries for this cache (optional if a default value exists)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "4",
+                        "argumentName": "maxEntryAge",
+                        "argumentType": "string",
+                        "guiLabel": "Max. entry age in seconds (optional if a default value exists)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "5",
+                        "argumentName": "maxEntrySize",
+                        "argumentType": "string",
+                        "guiLabel": "Max. size for each entry (optional if a default value exists)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "6",
+                        "argumentName": "msg",
+                        "argumentType": "message",
+                        "guiLabel": "The message to be cached (required, must exist in the preceeding policy context)",
+                        "guiPrompt": "true"
+                    },
+                    {
+                        "ordinal": "7",
+                        "argumentName": "custom",
+                        "argumentType": "string",
+                        "guiLabel": "Custom",
+                        "guiPrompt": "true"
+                    }
+                ]
+            },
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "custom_data",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.code",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "error.msg",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "Writes an item to cache with ID: cacheID with key: cacheKey.  If the cache does not exist, one will be created.  If the key exists, the existing item will be overwritten."
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "customAssertions"
+                        }
+                    },
+                    {
+                        "key": "paletteIconBase64",
+                        "stringValue": {
+                            "value": "R0lGODlhEAAQAPcAAAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDAwP8AAAD\/AP\/\/AAAA\/\/8A\/wD\/\r\n\/\/\/\/\/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\r\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAZgAAmQAAzAAA\/wAzAAAzMwAzZgAzmQAzzAAz\/wBm\r\nAABmMwBmZgBmmQBmzABm\/wCZAACZMwCZZgCZmQCZzACZ\/wDMAADMMwDMZgDMmQDMzADM\/wD\/AAD\/\r\nMwD\/ZgD\/mQD\/zAD\/\/zMAADMAMzMAZjMAmTMAzDMA\/zMzADMzMzMzZjMzmTMzzDMz\/zNmADNmMzNm\r\nZjNmmTNmzDNm\/zOZADOZMzOZZjOZmTOZzDOZ\/zPMADPMMzPMZjPMmTPMzDPM\/zP\/ADP\/MzP\/ZjP\/\r\nmTP\/zDP\/\/2YAAGYAM2YAZmYAmWYAzGYA\/2YzAGYzM2YzZmYzmWYzzGYz\/2ZmAGZmM2ZmZmZmmWZm\r\nzGZm\/2aZAGaZM2aZZmaZmWaZzGaZ\/2bMAGbMM2bMZmbMmWbMzGbM\/2b\/AGb\/M2b\/Zmb\/mWb\/zGb\/\r\n\/5kAAJkAM5kAZpkAmZkAzJkA\/5kzAJkzM5kzZpkzmZkzzJkz\/5lmAJlmM5lmZplmmZlmzJlm\/5mZ\r\nAJmZM5mZZpmZmZmZzJmZ\/5nMAJnMM5nMZpnMmZnMzJnM\/5n\/AJn\/M5n\/Zpn\/mZn\/zJn\/\/8wAAMwA\r\nM8wAZswAmcwAzMwA\/8wzAMwzM8wzZswzmcwzzMwz\/8xmAMxmM8xmZsxmmcxmzMxm\/8yZAMyZM8yZ\r\nZsyZmcyZzMyZ\/8zMAMzMM8zMZszMmczMzMzM\/8z\/AMz\/M8z\/Zsz\/mcz\/zMz\/\/\/8AAP8AM\/8AZv8A\r\nmf8AzP8A\/\/8zAP8zM\/8zZv8zmf8zzP8z\/\/9mAP9mM\/9mZv9mmf9mzP9m\/\/+ZAP+ZM\/+ZZv+Zmf+Z\r\nzP+Z\/\/\/MAP\/MM\/\/MZv\/Mmf\/MzP\/M\/\/\/\/AP\/\/M\/\/\/Zv\/\/mf\/\/zP\/\/\/yH5BAEAABAALAAAAAAQABAA\r\nAAhWAFGg+EewoEGDAgceXEgwYUOGCAX+UwixocOKBS9OlBjxIop+\/PpRZPgxZMiRBwWCFIkS4amE\r\nLyui4IeqDyqOJE\/xexkT4syaN1tm1MlTaEagRjsWDAgAOw=="
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "58143e14-a1cd-4cca-b25a-e2d637a42bbc"
+                        }
+                    }
+                ]
+            },
+            "id": "161861da3a78c5dcdc62696d16914c44"
         },
         {
             "name": "OTK Fail with error message",

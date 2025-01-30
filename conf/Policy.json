@@ -201,6 +201,166 @@
             "id": "e001cfd0c1c1ffaa18e187b5e72fd1ab"
         },
         {
+            "guid": "2b223445-0162-443d-90cf-b91d4a9ddacc",
+            "policyDetail": {
+                "folderId": "e001cfd0c1c1ffaa18e187b5e72fd04e",
+                "guid": "2b223445-0162-443d-90cf-b91d4a9ddacc",
+                "name": "OTK Client GET",
+                "policyType": "Include",
+                "properties": {
+                    "property": [
+                        {
+                            "key": "hasRouting",
+                            "booleanValue": "true"
+                        },
+                        {
+                            "key": "revision",
+                            "longValue": "1"
+                        },
+                        {
+                            "key": "soap",
+                            "booleanValue": "false"
+                        }
+                    ]
+                },
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd10a"
+            },
+            "resources": {
+                "resourceSet": [
+                    {
+                        "tag": "policy",
+                        "resource": [
+                            {
+                                "type": "policy",
+                                "content": "OTK Client GET.xml"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fd10a"
+        },
+        {
+            "guid": "65160b39-84e5-4e02-ab75-9888ecdfa67b",
+            "policyDetail": {
+                "folderId": "161861da3a78c5dcdc62696d16914781",
+                "guid": "65160b39-84e5-4e02-ab75-9888ecdfa67b",
+                "name": "#OTK Profile Configuration",
+                "policyType": "Include",
+                "properties": {
+                    "property": [
+                        {
+                            "key": "hasRouting",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "revision",
+                            "longValue": "1"
+                        },
+                        {
+                            "key": "soap",
+                            "booleanValue": "false"
+                        }
+                    ]
+                },
+                "id": "2a93e2b64633d7874eb692e23adc735b"
+            },
+            "resources": {
+                "resourceSet": [
+                    {
+                        "tag": "policy",
+                        "resource": [
+                            {
+                                "type": "policy",
+                                "content": "#OTK Profile Configuration.xml"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "id": "2a93e2b64633d7874eb692e23adc735b"
+        },
+        {
+            "guid": "7e2f84c6-f8b6-423f-ba2a-bd802fa9a17d",
+            "policyDetail": {
+                "folderId": "e001cfd0c1c1ffaa18e187b5e72fc858",
+                "guid": "7e2f84c6-f8b6-423f-ba2a-bd802fa9a17d",
+                "name": "OTK Profile Configuration",
+                "policyType": "Include",
+                "properties": {
+                    "property": [
+                        {
+                            "key": "hasRouting",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "revision",
+                            "longValue": "1"
+                        },
+                        {
+                            "key": "soap",
+                            "booleanValue": "false"
+                        }
+                    ]
+                },
+                "id": "2a93e2b64633d7874eb692e23adc6c42"
+            },
+            "resources": {
+                "resourceSet": [
+                    {
+                        "tag": "policy",
+                        "resource": [
+                            {
+                                "type": "policy",
+                                "content": "OTK Profile Configuration.xml"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "id": "2a93e2b64633d7874eb692e23adc6c42"
+        },
+        {
+            "guid": "14f8a882-e66c-4a70-88d8-0128e2922744",
+            "policyDetail": {
+                "folderId": "e001cfd0c1c1ffaa18e187b5e72fcfce",
+                "guid": "14f8a882-e66c-4a70-88d8-0128e2922744",
+                "name": "OTK Access Token Retrieval",
+                "policyType": "Include",
+                "properties": {
+                    "property": [
+                        {
+                            "key": "hasRouting",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "revision",
+                            "longValue": "1"
+                        },
+                        {
+                            "key": "soap",
+                            "booleanValue": "false"
+                        }
+                    ]
+                },
+                "id": "e001cfd0c1c1ffaa18e187b5e72fd86a"
+            },
+            "resources": {
+                "resourceSet": [
+                    {
+                        "tag": "policy",
+                        "resource": [
+                            {
+                                "type": "policy",
+                                "content": "OTK Access Token Retrieval.xml"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fd86a"
+        },
+        {
             "guid": "a2206e7c-28e8-489d-862d-3b7c6da78079",
             "policyDetail": {
                 "folderId": "161861da3a78c5dcdc62696d169147d0",
@@ -401,206 +561,6 @@
             "id": "161861da3a78c5dcdc62696d16914bbb"
         },
         {
-            "guid": "58143e14-a1cd-4cca-b25a-e2d637a42bbc",
-            "policyDetail": {
-                "folderId": "161861da3a78c5dcdc62696d1691481a",
-                "guid": "58143e14-a1cd-4cca-b25a-e2d637a42bbc",
-                "name": "OTK Cache Store",
-                "policyType": "Include",
-                "properties": {
-                    "property": [
-                        {
-                            "key": "hasRouting",
-                            "booleanValue": "false"
-                        },
-                        {
-                            "key": "revision",
-                            "longValue": "1"
-                        },
-                        {
-                            "key": "soap",
-                            "booleanValue": "false"
-                        }
-                    ]
-                },
-                "id": "161861da3a78c5dcdc62696d16914be5"
-            },
-            "resources": {
-                "resourceSet": [
-                    {
-                        "tag": "policy",
-                        "resource": [
-                            {
-                                "type": "policy",
-                                "content": "OTK Cache Store.xml"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "id": "161861da3a78c5dcdc62696d16914be5"
-        },
-        {
-            "guid": "2b223445-0162-443d-90cf-b91d4a9ddacc",
-            "policyDetail": {
-                "folderId": "e001cfd0c1c1ffaa18e187b5e72fd04e",
-                "guid": "2b223445-0162-443d-90cf-b91d4a9ddacc",
-                "name": "OTK Client GET",
-                "policyType": "Include",
-                "properties": {
-                    "property": [
-                        {
-                            "key": "hasRouting",
-                            "booleanValue": "true"
-                        },
-                        {
-                            "key": "revision",
-                            "longValue": "1"
-                        },
-                        {
-                            "key": "soap",
-                            "booleanValue": "false"
-                        }
-                    ]
-                },
-                "id": "e001cfd0c1c1ffaa18e187b5e72fd10a"
-            },
-            "resources": {
-                "resourceSet": [
-                    {
-                        "tag": "policy",
-                        "resource": [
-                            {
-                                "type": "policy",
-                                "content": "OTK Client GET.xml"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "id": "e001cfd0c1c1ffaa18e187b5e72fd10a"
-        },
-        {
-            "guid": "65160b39-84e5-4e02-ab75-9888ecdfa67b",
-            "policyDetail": {
-                "folderId": "161861da3a78c5dcdc62696d16914781",
-                "guid": "65160b39-84e5-4e02-ab75-9888ecdfa67b",
-                "name": "#OTK Profile Configuration",
-                "policyType": "Include",
-                "properties": {
-                    "property": [
-                        {
-                            "key": "hasRouting",
-                            "booleanValue": "false"
-                        },
-                        {
-                            "key": "revision",
-                            "longValue": "1"
-                        },
-                        {
-                            "key": "soap",
-                            "booleanValue": "false"
-                        }
-                    ]
-                },
-                "id": "2a93e2b64633d7874eb692e23adc735b"
-            },
-            "resources": {
-                "resourceSet": [
-                    {
-                        "tag": "policy",
-                        "resource": [
-                            {
-                                "type": "policy",
-                                "content": "#OTK Profile Configuration.xml"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "id": "2a93e2b64633d7874eb692e23adc735b"
-        },
-        {
-            "guid": "7e2f84c6-f8b6-423f-ba2a-bd802fa9a17d",
-            "policyDetail": {
-                "folderId": "e001cfd0c1c1ffaa18e187b5e72fc858",
-                "guid": "7e2f84c6-f8b6-423f-ba2a-bd802fa9a17d",
-                "name": "OTK Profile Configuration",
-                "policyType": "Include",
-                "properties": {
-                    "property": [
-                        {
-                            "key": "hasRouting",
-                            "booleanValue": "false"
-                        },
-                        {
-                            "key": "revision",
-                            "longValue": "1"
-                        },
-                        {
-                            "key": "soap",
-                            "booleanValue": "false"
-                        }
-                    ]
-                },
-                "id": "2a93e2b64633d7874eb692e23adc6c42"
-            },
-            "resources": {
-                "resourceSet": [
-                    {
-                        "tag": "policy",
-                        "resource": [
-                            {
-                                "type": "policy",
-                                "content": "OTK Profile Configuration.xml"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "id": "2a93e2b64633d7874eb692e23adc6c42"
-        },
-        {
-            "guid": "14f8a882-e66c-4a70-88d8-0128e2922744",
-            "policyDetail": {
-                "folderId": "e001cfd0c1c1ffaa18e187b5e72fcfce",
-                "guid": "14f8a882-e66c-4a70-88d8-0128e2922744",
-                "name": "OTK Access Token Retrieval",
-                "policyType": "Include",
-                "properties": {
-                    "property": [
-                        {
-                            "key": "hasRouting",
-                            "booleanValue": "false"
-                        },
-                        {
-                            "key": "revision",
-                            "longValue": "1"
-                        },
-                        {
-                            "key": "soap",
-                            "booleanValue": "false"
-                        }
-                    ]
-                },
-                "id": "e001cfd0c1c1ffaa18e187b5e72fd86a"
-            },
-            "resources": {
-                "resourceSet": [
-                    {
-                        "tag": "policy",
-                        "resource": [
-                            {
-                                "type": "policy",
-                                "content": "OTK Access Token Retrieval.xml"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "id": "e001cfd0c1c1ffaa18e187b5e72fd86a"
-        },
-        {
             "guid": "1a55cc2a-9996-4978-8473-c2a75e5c59d1",
             "policyDetail": {
                 "folderId": "161861da3a78c5dcdc62696d16914781",
@@ -639,6 +599,46 @@
                 ]
             },
             "id": "bc9a31b7578652a08a514d7d4fef9afd"
+        },
+        {
+            "guid": "58143e14-a1cd-4cca-b25a-e2d637a42bbc",
+            "policyDetail": {
+                "folderId": "161861da3a78c5dcdc62696d1691481a",
+                "guid": "58143e14-a1cd-4cca-b25a-e2d637a42bbc",
+                "name": "OTK Cache Store",
+                "policyType": "Include",
+                "properties": {
+                    "property": [
+                        {
+                            "key": "hasRouting",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "revision",
+                            "longValue": "1"
+                        },
+                        {
+                            "key": "soap",
+                            "booleanValue": "false"
+                        }
+                    ]
+                },
+                "id": "161861da3a78c5dcdc62696d16914be5"
+            },
+            "resources": {
+                "resourceSet": [
+                    {
+                        "tag": "policy",
+                        "resource": [
+                            {
+                                "type": "policy",
+                                "content": "OTK Cache Store.xml"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "id": "161861da3a78c5dcdc62696d16914be5"
         },
         {
             "guid": "9e864ce5-1275-477f-a642-b5e867f367a3",

@@ -21,14 +21,8 @@
       <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc818" id="e001cfd0c1c1ffaa18e187b5e72fc858" version="0">
         <l7:Name>configuration</l7:Name>
       </l7:Folder>
-      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc818" id="e001cfd0c1c1ffaa18e187b5e72fc8d8" version="0">
-        <l7:Name>persistence</l7:Name>
-      </l7:Folder>
       <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc818" id="e001cfd0c1c1ffaa18e187b5e72fcf8e" version="0">
         <l7:Name>manage</l7:Name>
-      </l7:Folder>
-      <l7:Folder folderId="161861da3a78c5dcdc62696d16914781" id="75d97bfe87badb85dee9ea06efceffda" version="0">
-        <l7:Name>persistence</l7:Name>
       </l7:Folder>
       <l7:Folder folderId="161861da3a78c5dcdc62696d16914781" id="161861da3a78c5dcdc62696d169147d0" version="0">
         <l7:Name>caching</l7:Name>
@@ -42,14 +36,8 @@
       <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc818" id="e001cfd0c1c1ffaa18e187b5e72fc898" version="0">
         <l7:Name>pof</l7:Name>
       </l7:Folder>
-      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc8d8" id="e001cfd0c1c1ffaa18e187b5e72fcbcd" version="0">
-        <l7:Name>token</l7:Name>
-      </l7:Folder>
       <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fcf8e" id="e001cfd0c1c1ffaa18e187b5e72fcfce" version="0">
         <l7:Name>token</l7:Name>
-      </l7:Folder>
-      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc8d8" id="e001cfd0c1c1ffaa18e187b5e72fc918" version="0">
-        <l7:Name>client</l7:Name>
       </l7:Folder>
       <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fcf8e" id="e001cfd0c1c1ffaa18e187b5e72fd04e" version="0">
         <l7:Name>client</l7:Name>
