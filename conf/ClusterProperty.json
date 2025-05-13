@@ -1,6 +1,116 @@
 {
     "clusterproperty": [
         {
+            "name": "otk.ovp.reuse_refresh_token",
+            "value": "false",
+            "id": "7d26b3199c8af6547c045e438ce87b92"
+        },
+        {
+            "name": "otk.ovp.reuse_refresh_expiration",
+            "value": "false",
+            "id": "7d26b3199c8af6547c045e438ce87b98"
+        },
+        {
+            "name": "otk.oauth2.mtls.client_certificate_header",
+            "value": "",
+            "id": "692457dbf95ea12802a160f12a58739e"
+        },
+        {
+            "name": "otk.cache.default_max_entry_age_s",
+            "value": "300",
+            "id": "7d26b3199c8af6547c045e438ce87b0e"
+        },
+        {
+            "name": "otk.cache.default_max_entry_size",
+            "value": "10000",
+            "id": "7d26b3199c8af6547c045e438ce87b06"
+        },
+        {
+            "name": "otk.cache.default_max_entries",
+            "value": "10000",
+            "id": "7d26b3199c8af6547c045e438ce87afc"
+        },
+        {
+            "name": "cluster.hostname",
+            "value": "my.localdomain",
+            "id": "0000000000000000fffffffffff5519f"
+        },
+        {
+            "name": "otk.dbsystem",
+            "value": "mysql",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c51a"
+        },
+        {
+            "name": "otk.separate_schemas",
+            "value": "false",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c522"
+        },
+        {
+            "name": "otk.max_oauth_token_count",
+            "value": "1",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c527"
+        },
+        {
+            "name": "otk.max_oauth_token_behaviour",
+            "value": "none",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c52c"
+        },
+        {
+            "name": "otk.access_token.enable_jwt",
+            "value": "false",
+            "id": "ce71d24f2e5c1b26a2145df207944bc5"
+        },
+        {
+            "name": "otk.access_token.enable_jwt.query_db",
+            "value": "true",
+            "id": "ce71d24f2e5c1b26a2145df207944bc6"
+        },
+        {
+            "name": "otk.oauth2.token_type",
+            "value": "BEARER",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c531"
+        },
+        {
+            "name": "otk.port",
+            "value": "8443",
+            "id": "b1a49fed80115088f84433b5b274825d"
+        },
+        {
+            "name": "otk.expose_client_secret",
+            "value": "false",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c537"
+        },
+        {
+            "name": "otk.enable_anonymous_client_export",
+            "value": "false",
+            "id": "0c3729ca9f24cb4f2f55d363c7f7c53c"
+        },
+        {
+            "name": "otk.client_credential.jwt.cache_lifetime_s",
+            "value": "1800",
+            "id": "7d26b3199c8af6547c045e438ce87b81"
+        },
+        {
+            "name": "otk.jwks.lookup_cache_lifetime_s",
+            "value": "60",
+            "id": "ce71d24f2e5c1b26a2145df207944bc7"
+        },
+        {
+            "name": "otk.oauth2.mtls.enable_thumbprint_validation",
+            "value": "true",
+            "id": "de5580193baf6827f6ff69746c3adc14"
+        },
+        {
+            "name": "otk.access_token.enable_intended_audience_check",
+            "value": "false",
+            "id": "ce71d24f2e5c1b26a2145df207944bc4"
+        },
+        {
+            "name": "otk.refresh_token_deletion_strategy",
+            "value": "DELETE",
+            "id": "ad8c6bd08fb3f117c8fb018292af268f"
+        },
+        {
             "name": "demo.training.configuration",
             "value": "{\n  \"logmode\":\"audit\",\n  \"serviceurl\":\"\/demo\/migration\/jsontransform\",\n  \"serviceport\":\"8443\",\n  \"servicehost\":\"l7gw\",\n  \"loginuser\":\"nbreuer\",\n  \"demosetting\":\"demo\"\n}",
             "id": "b2383bdfe09adb9a8f7efac30c50d7f1"
